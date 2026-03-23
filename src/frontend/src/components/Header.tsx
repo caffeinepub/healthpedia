@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Link, useNavigate } from "@tanstack/react-router";
-import { Menu, Search, Shield, X } from "lucide-react";
+import { Menu, Search, X } from "lucide-react";
 import { useState } from "react";
 
 export function Header() {
@@ -38,15 +38,14 @@ export function Header() {
           {/* Logo */}
           <Link
             to="/"
-            className="flex items-center gap-2 shrink-0"
+            className="flex items-center shrink-0"
             data-ocid="nav.link"
           >
-            <div className="w-9 h-9 rounded-lg bg-primary flex items-center justify-center">
-              <Shield className="w-5 h-5 text-primary-foreground" />
-            </div>
-            <span className="text-xl font-extrabold text-navy tracking-tight">
-              HealthPedia
-            </span>
+            <img
+              src="/assets/uploads/fulllogo-1.jpg"
+              alt="HealthPedia"
+              className="h-12 w-auto object-contain"
+            />
           </Link>
 
           {/* Desktop nav */}

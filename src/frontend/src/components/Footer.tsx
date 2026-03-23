@@ -40,19 +40,25 @@ export function Footer() {
             About
           </h3>
           <ul className="space-y-2 text-sm">
-            {[
-              "Contact Us",
-              "Our Team",
-              "Privacy Policy",
-              "Terms of Use",
-              "Disclaimer",
-            ].map((item) => (
-              <li key={item}>
-                <span className="text-primary-foreground/70 cursor-pointer hover:text-primary-foreground transition-colors">
-                  {item}
-                </span>
-              </li>
-            ))}
+            <li>
+              <a
+                href="mailto:healthpediaofficials@gmail.com"
+                data-ocid="footer.contact.link"
+                className="flex items-center gap-1.5 text-primary-foreground/70 hover:text-primary-foreground transition-colors"
+              >
+                <Mail className="w-3.5 h-3.5" />
+                Contact Us
+              </a>
+            </li>
+            {["Our Team", "Privacy Policy", "Terms of Use", "Disclaimer"].map(
+              (item) => (
+                <li key={item}>
+                  <span className="text-primary-foreground/70 cursor-pointer hover:text-primary-foreground transition-colors">
+                    {item}
+                  </span>
+                </li>
+              ),
+            )}
           </ul>
         </div>
 
@@ -107,21 +113,37 @@ export function Footer() {
             Connect
           </h3>
           <div className="flex gap-3 mb-5">
-            {[
-              { Icon: Facebook, label: "Facebook" },
-              { Icon: Twitter, label: "Twitter" },
-              { Icon: Instagram, label: "Instagram" },
-              { Icon: Youtube, label: "YouTube" },
-            ].map(({ Icon, label }) => (
-              <button
-                key={label}
-                type="button"
-                aria-label={label}
-                className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary transition-colors"
-              >
-                <Icon className="w-4 h-4" />
-              </button>
-            ))}
+            <button
+              type="button"
+              aria-label="Facebook"
+              className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary transition-colors"
+            >
+              <Facebook className="w-4 h-4" />
+            </button>
+            <button
+              type="button"
+              aria-label="Twitter"
+              className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary transition-colors"
+            >
+              <Twitter className="w-4 h-4" />
+            </button>
+            <a
+              href="https://www.instagram.com/healthpediaofficials?igsh=Mnlqb3I5NzMzOTZo"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+              data-ocid="footer.instagram.link"
+              className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary transition-colors"
+            >
+              <Instagram className="w-4 h-4" />
+            </a>
+            <button
+              type="button"
+              aria-label="YouTube"
+              className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary transition-colors"
+            >
+              <Youtube className="w-4 h-4" />
+            </button>
           </div>
           <p className="text-xs text-primary-foreground/60 mb-2">
             Subscribe for health updates:
