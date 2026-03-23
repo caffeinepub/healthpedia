@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.625rem;
+    /* HealthPedia Blue palette */
+    --background: 0.985 0.01 220;
+    --foreground: 0.145 0.025 264;
+    --card: 1 0 0;
+    --card-foreground: 0.145 0.025 264;
+    --popover: 1 0 0;
+    --popover-foreground: 0.145 0.025 264;
+    --primary: 0.42 0.095 230;
+    --primary-foreground: 1 0 0;
+    --secondary: 0.975 0.015 220;
+    --secondary-foreground: 0.22 0.07 232;
+    --muted: 0.96 0.02 220;
+    --muted-foreground: 0.52 0.01 264;
+    --accent: 0.93 0.035 220;
+    --accent-foreground: 0.42 0.095 230;
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 0.985 0 0;
+    --border: 0.91 0.03 220;
+    --input: 0.91 0.03 220;
+    --ring: 0.42 0.095 230;
+    --navy: 0.22 0.07 232;
+    --panel-tint: 0.97 0.02 220;
+    --chart-1: 0.646 0.222 41.116;
+    --chart-2: 0.6 0.118 184.704;
+    --chart-3: 0.398 0.07 227.392;
+    --chart-4: 0.828 0.189 84.429;
+    --chart-5: 0.769 0.188 70.08;
+    --sidebar: 0.985 0 0;
+    --sidebar-foreground: 0.145 0 0;
+    --sidebar-primary: 0.205 0 0;
+    --sidebar-primary-foreground: 0.985 0 0;
+    --sidebar-accent: 0.97 0 0;
+    --sidebar-accent-foreground: 0.205 0 0;
+    --sidebar-border: 0.922 0 0;
+    --sidebar-ring: 0.708 0 0;
+  }
+
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+}
